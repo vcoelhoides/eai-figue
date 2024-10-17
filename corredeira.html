@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eai, Figuê?</title>
+    <link rel="stylesheet" href="css/corredeira.css">
+    <link rel="icon" type="image" href="imgs/iconEAIFIGUE.png">
+    <script>
+        function toggleHorarios(id) {
+            const horarios = document.getElementById(id);
+            if (horarios.style.display === 'none') {
+                horarios.style.display = 'block';
+            } else {
+                horarios.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="menu.html"><img class="voltar" src="imgs/volte.png" alt="Voltar"></a>
+        <h1 class="menu">CORREDEIRAS</h1>
+    </header>
+
+    <main>
+        <div class="lista">
+
+            <div class="urubui">
+                <h2>Urubuí</h2>
+                <img src="imgs/urubui.jpeg" alt="Urubui">
+                <h3>Localização:</h3>
+                <p>À aproximadamente 850m do centro de Presidente Figueiredo, sem trilhas.</p>
+                <h3>Descrição:</h3>
+                <p>A corredeira Urubuí é um destino popular para famílias, oferecendo diversas opções de restaurantes e lanchonetes nas proximidades. O acesso à corredeira é gratuito e conta com a presença de salva-vidas, garantindo segurança para os banhistas. A água gelada do Urubuí proporciona uma experiência refrescante, ideal para um banho relaxante em meio à natureza exuberante.</p>
+                
+                <h3>Desafios:</h3>
+                <p>No entanto, o local pode ficar bastante cheio, especialmente em fins de semana e feriados, o que dificulta a busca por tranquilidade. Além disso, a interação com vendedores que oferecem comidas e os "flanelinhas" que pedem para estacionar pode ser incômoda para quem busca sossego. A correnteza das corredeiras pode ser forte, e as pedras escorregadias exigem atenção redobrada, especialmente para crianças.</p>
+                
+                <h3>Experiência:</h3>
+                <p>A experiência de visitar as corredeiras varia entre os visitantes. Enquanto alguns consideram o local perfeito para diversão em família, outros sentem que a lotação prejudica a apreciação do ambiente. Apesar das atividades recreativas e das áreas para descanso, o local não é recomendado para quem procura um momento de tranquilidade. No entanto, a experiência pode ser significativamente melhor em dias menos movimentados.</p>
+                
+                <h4 class="clickable" onclick="toggleHorarios('horarios-urubui')">Confira os horários;</h4>
+                <ul id="horarios-urubui" style="display:none;">
+                    <li><strong>Funcionamento:</strong>24hrs</li>
+                 
+                </ul>
+            </div>
+
+            <div class="lajes">
+                <h2>Corredeira das lajes</h2>
+                <img src="imgs/lajes.jpeg" alt="corredeira lajes">
+                <h3>Localização:</h3>
+                <p>À aproximadamente 6,7km do centro de Presidente Figueiredo, sem trilhas.</p>
+                   <h3>Descrição:</h3> <p>A Cachoeira das Lajes, localizada no sítio Santa Lúcia, é um local ideal para quem aprecia a natureza e busca um espaço para acampar. A região conta com corredeiras refrescantes, que proporcionam uma experiência agradável de banho, além de áreas amplas para lazer em meio à floresta amazônica. O local oferece banheiros com chuveiros, tanto masculinos quanto femininos, e a possibilidade de levar comida e bebida, com churrasqueiras disponíveis para uso dos visitantes.</p> <h3>Desafios:</h3> <p>Apesar das belezas naturais, há alguns desafios a serem enfrentados. Muitas pessoas costumam levar caixas de som grandes e não respeitam o espaço alheio, dificultando a apreciação do som da natureza. No entanto, existe uma regra que limita o uso de som até às 22h, o que permite um descanso mais tranquilo à noite. Além disso, a infraestrutura do local precisa de melhorias, como a manutenção dos banheiros e a organização das áreas comuns, que podem ficar bagunçadas.</p> <h3>Experiência:</h3> <p>Visitar a Cachoeira das Lajes proporciona uma conexão única com a natureza e um ambiente familiar, ideal para um dia de diversão com a família e amigos. Muitos visitantes destacam a tranquilidade do lugar, a beleza das corredeiras e a possibilidade de relaxar em um ambiente repleto de verde. A interação com a natureza e as atividades ao ar livre tornam a experiência memorável, mesmo que haja aspectos a serem aprimorados.</p>
+
+                <h4 class="clickable" onclick="toggleHorarios('horarios-natal')">Confira os horários;</h4>
+                <ul id="horarios-natal" style="display:none;">
+                    <li><strong>Segunda-feira:</strong> 07:00–16:00</li>
+                    <li><strong>Terça-feira:</strong> 07:00–16:00</li>
+                    <li><strong>Quarta-feira:</strong> 07:00–16:00</li>
+                    <li><strong>Quinta-feira:</strong> 07:00–16:00</li>
+                    <li><strong>Sexta-feira:</strong> 07:00–16:00</li>
+                    <li><strong>Sábado:</strong> 07:00–16:00</li>
+                    <li><strong>Domingo:</strong> 07:00–16:00</li>
+                </ul>
+                
+                    
+                </ul>
+            </div>
+           
+        </div>
+    </main>
+</body>
+</html>

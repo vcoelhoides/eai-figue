@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, #ffece1, #FFE2D0);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, #ffae7b, #dcb49c);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+header img.figue {
+    width: 40px;
+    height: 40px;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list li a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: black; 
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+h1, h2 {
+    color: black; 
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none; /* Remove sublinhado dos títulos */
+}
+
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.cachoeiras, .corredeiras, .presidente, .balbina {
+    color: black;
+    text-align: justify;
+    background-color: #ffd3b8;
+    width: 45%;
+    height: auto;
+    justify-content: center;
+    box-shadow: 0px 0px 8px 0px black;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; 
+}
+
+.cachoeiras:hover, .corredeiras:hover, .presidente:hover, .balbina:hover {
+    transform: scale(1.1); 
+}
+
+.cachoeiras img, .corredeiras img, .presidente img, .balbina img {
+    border: black solid 3px;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: contain;
+    margin: 0 auto 10px auto;
+}
+
+footer {
+    background: linear-gradient(to right, #ffae7b, #dcb49c);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    color: black; 
+    padding: 10px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .cachoeiras, .presidente, .corredeiras, .balbina {
+        width: 100%;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img.figue {
+        margin-bottom: 10px;
+    }
+}
